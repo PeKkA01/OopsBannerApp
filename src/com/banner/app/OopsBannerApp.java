@@ -1,19 +1,61 @@
 package com.banner.app;
 
 /**
- * UC2: Render OOPS as Banner using Print Statements
- * Displays the word "OOPS" using '*' and spaces.
+ * UC3: Render OOPS as Banner using String.join()
+ * Refactors UC2 by replacing string concatenation
+ * with String.join() for better readability and efficiency.
  */
 public class OopsBannerApp {
 
     public static void main(String[] args) {
 
-        System.out.println("  *****     *****     *****      ***** ");
-        System.out.println(" *     *   *     *   *     *    *       ");
-        System.out.println(" *     *   *     *   *     *     *****  ");
-        System.out.println(" *     *   *     *   *****            *");
-        System.out.println(" *     *   *     *   *                *");
-        System.out.println(" *     *   *     *   *                *");
-        System.out.println("  *****     *****    *          *****  ");
+        System.out.println(String.join("  ",
+                " ***** ",
+                " ***** ",
+                " ***** ",
+                " ***** "
+        ));
+
+        System.out.println(String.join("  ",
+                "*     *",
+                "*     *",
+                "*     *",
+                "*      "
+        ));
+
+        System.out.println(String.join("  ",
+                "*     *",
+                "*     *",
+                "*     *",
+                " ***** "
+        ));
+
+        System.out.println(String.join("  ",
+                "*     *",
+                "*     *",
+                " ***** ",
+                "       *"
+        ));
+
+        System.out.println(String.join("  ",
+                "*     *",
+                "*     *",
+                "*       ",
+                "       *"
+        ));
+
+        System.out.println(String.join("  ",
+                "*     *",
+                "*     *",
+                "*       ",
+                "       *"
+        ));
+
+        System.out.println(String.join("  ",
+                " ***** ",
+                " ***** ",
+                "*       ",
+                " ***** "
+        ));
     }
 }
